@@ -1,0 +1,1782 @@
+// mGuard Configuration Profile
+
+#boardtype Innominate mGuard rs4000
+#version 8.1.5.default
+
+ARP_LIMIT_EXT = "500"
+ARP_LIMIT_INT = "500"
+ARP_TIMEOUT = "30"
+BLADE_CFG = {
+  {
+    { rid = "MAI1695111109" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI2114450787" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI0771997078" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI2095914464" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI1733545770" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI2111445385" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI0213885885" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI1039426439" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI1548378227" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI0965997487" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI0914989774" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+  {
+    { rid = "MAI0919695049" }
+    BACKUP = "no"
+    RECONFIG = "no"
+  }
+}
+CA_CERTS = {
+}
+CHECK_PATTERN_SET = {
+  {
+    { rid = "MAI0895356532" }
+    NAME = "executables"
+    SET = {
+      {
+        { rid = "MAI0349811962" }
+        CHECK = "no"
+        PATTERN = "pagefile.sys\\**\\*"
+      }
+      {
+        { rid = "MAI0651819730" }
+        CHECK = "no"
+        PATTERN = "pagefile.sys"
+      }
+      {
+        { rid = "MAI1772180410" }
+        CHECK = "yes"
+        PATTERN = "**\\*.exe"
+      }
+      {
+        { rid = "MAI0258752358" }
+        CHECK = "yes"
+        PATTERN = "**\\*.com"
+      }
+      {
+        { rid = "MAI0568146309" }
+        CHECK = "yes"
+        PATTERN = "**\\*.dll"
+      }
+      {
+        { rid = "MAI1180213516" }
+        CHECK = "yes"
+        PATTERN = "**\\*.bat"
+      }
+      {
+        { rid = "MAI0856687915" }
+        CHECK = "yes"
+        PATTERN = "**\\*.cmd"
+      }
+    }
+  }
+}
+CIFS_ACCESS_RULES = {
+}
+CIFS_FILE_CHECK = {
+}
+CIFS_IMPORTED_SHARE = {
+}
+CIFS_INTEGRITY_CERT = ""
+CIFS_INTEGRITY_EMAIL_NOTIFY = "off"
+CIFS_INTEGRITY_EMAIL_SUBJECT = ""
+CIFS_INTEGRITY_EMAIL_TO = ""
+CIFS_SERVER_ENABLE = "no"
+CIFS_SERVER_LOGIN = "anonymous"
+CIFS_SERVER_PASSWORD = ""
+CIFS_SERVER_SHARE_ALLOW_WRITE = "no"
+CIFS_SERVER_SHARE_NAME = "exported-av-share"
+CIFS_SERVER_WORKGROUP = "WORKGROUP"
+CIFS_SHARE = {
+}
+COM_SERVER_ACCESS_RULES = {
+}
+COM_SERVER_PORT = "3001"
+COM_SERVER_REMOTE_IP = "10.1.0.254"
+COM_SERVER_REMOTE_PORT = "3001"
+COM_SERVER_TYPE = "off"
+CPU_TEMP_MAX = "100"
+CPU_TEMP_MIN = "0"
+CRL_CHECKING = "no"
+CRL_PULL_INTERVAL = "0"
+CRL_STORE = {
+}
+DEFAULT_GW = "10.35.10.254"
+DHCP_EXT_BROADCAST = "10.0.0.255"
+DHCP_EXT_DNS = "10.0.0.254"
+DHCP_EXT_ENABLE = "no"
+DHCP_EXT_END = "192.168.1.220"
+DHCP_EXT_GW = "192.168.1.1"
+DHCP_EXT_LEASE_TIME = "14400"
+DHCP_EXT_MASK = "255.255.255.0"
+DHCP_EXT_POOL = "no"
+DHCP_EXT_START = "192.168.1.200"
+DHCP_EXT_WINS = "10.0.0.254"
+DHCP_INT_BROADCAST = "192.168.1.255"
+DHCP_INT_DNS = "10.0.0.254"
+DHCP_INT_ENABLE = "no"
+DHCP_INT_END = "192.168.1.199"
+DHCP_INT_GW = "192.168.1.1"
+DHCP_INT_LEASE_TIME = "14400"
+DHCP_INT_MASK = "255.255.255.0"
+DHCP_INT_POOL = "yes"
+DHCP_INT_START = "192.168.1.100"
+DHCP_INT_WINS = "192.168.1.2"
+DHCP_RELAY_EXT_APPEND_AGENT_INFORMATION = "no"
+DHCP_RELAY_EXT_APPEND_LIMIT = "576"
+DHCP_RELAY_EXT_CIRCUIT_INFO = "if-name"
+DHCP_RELAY_EXT_CIRCUIT_TEXT = "undefined"
+DHCP_RELAY_EXT_MAXHOP = "10"
+DHCP_RELAY_EXT_REMOTE_INFO = "if-ip"
+DHCP_RELAY_EXT_REMOTE_TEXT = "undefined"
+DHCP_RELAY_EXT_SERVER = {
+}
+DHCP_RELAY_INT_APPEND_AGENT_INFORMATION = "no"
+DHCP_RELAY_INT_APPEND_LIMIT = "576"
+DHCP_RELAY_INT_CIRCUIT_INFO = "if-name"
+DHCP_RELAY_INT_CIRCUIT_TEXT = "undefined"
+DHCP_RELAY_INT_MAXHOP = "10"
+DHCP_RELAY_INT_REMOTE_INFO = "if-ip"
+DHCP_RELAY_INT_REMOTE_TEXT = "undefined"
+DHCP_RELAY_INT_SERVER = {
+}
+DHCP_STATIC_EXT = {
+}
+DHCP_STATIC_INT = {
+}
+DMZ_ALIASES = {
+}
+DMZ_ROUTES = {
+}
+DNSCACHE_ENABLED = "yes"
+DNSCACHE_MODE = "root"
+DNSCACHE_SEARCHPATH = "example.local"
+DNSCACHE_USER_DEFINED = {
+}
+DNS_ZONE = {
+}
+ECS_AUTOSAVE_ENABLE = "no"
+ECS_ENCRYPTION = "no"
+ECS_LOAD_ON_BOOT = "yes"
+EMAIL_FROM = ""
+EMAIL_NOTIFICATION = {
+}
+EMAIL_RELAY_HOST = "smtp.example.local"
+EMAIL_RELAY_LOGIN = ""
+EMAIL_RELAY_PASSWORD = ""
+EMAIL_RELAY_PORT = "25"
+EMAIL_RELAY_TLS = "none"
+ENABLE_ETH0_AUTONEG = "yes"
+ENABLE_ETH0_MAU = "yes"
+ENABLE_ETH1_AUTONEG = "yes"
+ENABLE_ETH1_MAU = "yes"
+ENABLE_SWITCHING = "yes"
+ETH0_ADV1000FD = "yes"
+ETH0_ADV1000HD = "yes"
+ETH0_ADV100FD = "yes"
+ETH0_ADV100HD = "yes"
+ETH0_ADV10FD = "yes"
+ETH0_ADV10HD = "yes"
+ETH0_ADVPAUSE = "no"
+ETH0_FIXEDSETTING = "100fd"
+ETH0_SUPERVISE = "no"
+ETH1_ADV1000FD = "yes"
+ETH1_ADV1000HD = "yes"
+ETH1_ADV100FD = "yes"
+ETH1_ADV100HD = "yes"
+ETH1_ADV10FD = "yes"
+ETH1_ADV10HD = "yes"
+ETH1_ADVPAUSE = "no"
+ETH1_FIXEDSETTING = "100fd"
+ETH1_SUPERVISE = "no"
+ETHERWAKE_GROUP = {
+}
+EXT2_DNS_MODE = "none"
+EXT2_DNS_USER_DEFINED = {
+}
+EXT2_OPERATIONMODE = "fallback"
+EXT2_PROBE = {
+}
+EXT2_PROBE_FAILCOUNT = "2"
+EXT2_PROBE_INTERVAL_SECONDS = "20"
+EXT2_ROUTE = {
+}
+EXT2_ROUTERMODE = "none"
+EXTERN_ALIASES = {
+}
+EXTERN_ROUTES = {
+}
+FW_1TO1_NAT = {
+  {
+    { rid = "MAI0099835481" }
+    COMMENT = ""
+    ENABLE_ARP = "yes"
+    LOCAL_NET = "10.75.75.250"
+    MASK = "32"
+    REMOTE_NET = "10.35.10.80"
+  }
+}
+FW_CONNTRACK_FLUSH = "yes"
+FW_ICMP = "drop"
+FW_ICMP_DMZ0 = "drop"
+FW_ICMP_EXT2 = "drop"
+FW_INCOMING = {
+  uuid = "3fd6f336-d0ee-1e77-a64d-00a045c33b49"
+  {
+    { rid = "MAI1303037009" }
+    COMMENT = ""
+    EXT_IF = "ext1"
+    FROM_IP = "0.0.0.0/0"
+    FROM_MAC = "00:00:00:00:00:00"
+    FROM_PORT = "any"
+    IN_IP = "10.75.75.250/32"
+    IN_PORT = "502"
+    LOG = "no"
+    PROTO = "tcp"
+    TARGET_REF = "ACCEPT"
+  }
+  {
+    { rid = "MAI2026906017" }
+    COMMENT = ""
+    EXT_IF = "ext1"
+    FROM_IP = "0.0.0.0/0"
+    FROM_MAC = "00:00:00:00:00:00"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    LOG = "no"
+    PROTO = "icmp"
+    TARGET_REF = "ACCEPT"
+  }
+}
+FW_INCOMING_DMZ_LAN = {
+}
+FW_INCOMING_GLOBAL = "rules"
+FW_INCOMING_WAN_DMZ = {
+}
+FW_NAT = {
+}
+FW_NEW_CONNECTIONS_UPON_SYN_ONLY = "no"
+FW_OUTGOING = {
+  uuid = "2cc370b2-a1ee-1fbf-b788-00a045c33b49"
+  {
+    { rid = "MAI0798340357" }
+    COMMENT = "default rule"
+    FROM_IP = "0.0.0.0/0"
+    FROM_MAC = "00:00:00:00:00:00"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    LOG = "no"
+    PROTO = "all"
+    TARGET_REF = "ACCEPT"
+  }
+}
+FW_OUTGOING_DMZ_WAN = {
+}
+FW_OUTGOING_GLOBAL = "drop"
+FW_OUTGOING_LAN_DMZ = {
+}
+FW_PORTFORWARDING = {
+}
+FW_RULESETS = {
+}
+GAI_PULL_DLTIME = "120"
+GAI_PULL_HTTPS_CERT = ""
+GAI_PULL_HTTPS_DIR = ""
+GAI_PULL_HTTPS_FILE = ""
+GAI_PULL_HTTPS_HOST = "config.example.com"
+GAI_PULL_HTTPS_LOGIN = "anonymous"
+GAI_PULL_HTTPS_PASSWORD = "anonymous"
+GAI_PULL_HTTPS_PORT = "443"
+GAI_PULL_HTTPS_PREFER_VPN = "no"
+GAI_PULL_INTERVAL = "-1"
+GAI_PULL_ROLLBACK_BLOCK = "2"
+GAI_PULL_SCHEDULE = "*"
+GAI_PULL_SCHEDULE_HOUR = "0"
+GAI_PULL_SCHEDULE_MIN = "0"
+GPS_ENABLE = "no"
+GPS_UPDATE_CLOCK = "no"
+GSM_APN = ""
+GSM_APN2 = ""
+GSM_AUTH = "no"
+GSM_AUTH2 = "no"
+GSM_CDMA2000_FREQUENCY = "3072"
+GSM_CDMA_PROVIDER = "none"
+GSM_DEBUG = "no"
+GSM_FALLBACK_RETURN_HOURS = "0"
+GSM_FREQUENCY = "15"
+GSM_NETWORK_REGISTER_TOUT = "60"
+GSM_PASS = ""
+GSM_PASS2 = ""
+GSM_PIN = ""
+GSM_PIN2 = ""
+GSM_PPP_COMPRESSION = "yes"
+GSM_PPP_MTU = "1500"
+GSM_PROBE = {
+}
+GSM_PROBE_FAILCOUNT = "3"
+GSM_PROBE_INTERVAL_MINUTES = "5"
+GSM_RELOGIN = "no"
+GSM_RELOGIN_HOUR = "0"
+GSM_RELOGIN_MINUTE = "0"
+GSM_ROAMING = "yes"
+GSM_ROAMING2 = "yes"
+GSM_SIM_ENABLE = "no"
+GSM_SIM_ENABLE2 = "no"
+GSM_SIM_INIT_TOUT = "60"
+GSM_SIM_PROVIDER = "0"
+GSM_SIM_PROVIDER2 = "0"
+GSM_USER = ""
+GSM_USER2 = ""
+GSM_WCDMA_FREQUENCY = "496"
+HM_RS2_SIG_CONNECTIVITY_ALARM = "off"
+HM_RS2_SIG_MODEM_ALARM = "off"
+HM_RS2_SIG_PS2_ALARM = "on"
+HM_RS2_SIG_RELAY_MANUAL_STATE = "inactive"
+HM_RS2_SIG_RELAY_MODE = "standard"
+HM_RS2_SIG_TEMP_ALARM = "off"
+HM_TEMP_MAX = "60"
+HM_TEMP_MIN = "0"
+HTTPS_AUTH_CLIENT = "no"
+HTTPS_CA_CERTS = {
+}
+HTTPS_REMOTE_ACCESS_RULES = {
+}
+HTTPS_REMOTE_ENABLE = "no"
+HTTPS_REMOTE_LISTENPORT = "443"
+HTTPS_SERVER_CERT_REF = ""
+HTTPS_X509_AUTH = {
+}
+HTTPS_X509_AUTH_BLOB = {
+}
+ICMP_LENGTH_MAX = "65535"
+ICMP_LIMIT_EXT = "3"
+ICMP_LIMIT_INT = "5"
+IGMP_QUERY = "off"
+IGMP_QUERY_INTERVAL = "120"
+IGMP_SNOOP = "no"
+IGMP_SNOOP_AGING = "300"
+IGNORE_CERT_TIMES = "always"
+IP_CONNTRACK_FTP = "yes"
+IP_CONNTRACK_H323 = "no"
+IP_CONNTRACK_IRC = "yes"
+IP_CONNTRACK_MAX = "4096"
+IP_CONNTRACK_OPC = "no"
+IP_CONNTRACK_OPC_SANITY = "yes"
+IP_CONNTRACK_OPC_TIMEOUT = "300"
+IP_CONNTRACK_PPTP = "no"
+IP_CONNTRACK_SIP = "no"
+IP_CONNTRACK_TCP_TIMEOUT_CLOSE_WAIT = "3600"
+IP_CONNTRACK_TCP_TIMEOUT_ESTABLISHED = "432000"
+IP_SYNFLOOD_LIMIT_EXT = "25"
+IP_SYNFLOOD_LIMIT_INT = "75"
+IP_UNCLEAN_MATCH = "yes"
+KBD_DELAY = "250"
+KBD_KEYMAP_I386 = "qwertz/de-latin1-nodeadkeys"
+KBD_RATE = "30"
+L2REDUNDANCY = "no"
+L2REDUNDANCY_PORT = "intern"
+L2TP_ENABLED = "no"
+L2TP_FROM = "10.106.106.2"
+L2TP_LOCAL = "10.106.106.1"
+L2TP_PPPD_OPTIONS = {
+  {
+    { rid = "MAI2037762487" }
+    OPTION = "mtu 1396"
+  }
+  {
+    { rid = "MAI0660441496" }
+    OPTION = "mru 1396"
+  }
+}
+L2TP_TO = "10.106.106.254"
+LAST_SLOT_ID = "100"
+LLDPD_ENABLE = "no"
+LLDPD_EXT_ADMIN_STATUS = "enabledRxTx"
+LLDPD_EXT_MAX_NEIGHBORS = "10"
+LLDPD_EXT_PORT_DESCRIPTION = "WAN port"
+LLDPD_INT_ADMIN_STATUS = "enabledRxTx"
+LLDPD_INT_MAX_NEIGHBORS = "10"
+LLDPD_INT_PORT_DESCRIPTION = "LAN port"
+LOCAL_ALIASES = {
+}
+LOCAL_ROUTES = {
+}
+LOGGING_UDP_ENABLE = "no"
+LOGGING_UDP_SERVER_IP = "192.168.1.254"
+LOGGING_UDP_SERVER_PORT = "514"
+LOG_DEFAULT_INCOMING = "no"
+LOG_DEFAULT_INCOMING_DMZ_LAN = "no"
+LOG_DEFAULT_INCOMING_WAN_DMZ = "no"
+LOG_DEFAULT_OUTGOING = "no"
+LOG_DEFAULT_OUTGOING_DMZ_WAN = "no"
+LOG_DEFAULT_OUTGOING_LAN_DMZ = "no"
+MGUARD_ROUTER_DHCP_HIRSCHMANN_MULTICAST = "no"
+MODEM_ANALOG_COUNTRY = "DE"
+MODEM_ANALOG_EXTLINE = "no"
+MODEM_ANALOG_SPKRCTRL = "1"
+MODEM_ANALOG_VOLUME = "1"
+MODEM_AUTH = "pap"
+MODEM_BAUDRATE = "57600"
+MODEM_CHAP_LOCAL_NAME = ""
+MODEM_CHAP_REMOTE_NAME = ""
+MODEM_CHAP_REQUIRE_SERVER_AUTH = "no"
+MODEM_CHAP_SECRET = ""
+MODEM_CHAP_SERVER_SECRET = ""
+MODEM_CRTSCTS = ""
+MODEM_DEBUG = "no"
+MODEM_DOD = "yes"
+MODEM_IDLE_TIMEOUT = "yes"
+MODEM_IDLE_TIMEOUT_SECONDS = "300"
+MODEM_ISDN_L2PROTO = "9"
+MODEM_ISDN_MSN1 = ""
+MODEM_ISDN_MSN2 = ""
+MODEM_ISDN_PROTOCOL = "2"
+MODEM_LOCAL_IP = "0.0.0.0"
+MODEM_NETMASK = "0.0.0.0"
+MODEM_PAP_PASS = ""
+MODEM_PAP_REQUIRE_SERVER_AUTH = "no"
+MODEM_PAP_SERVER_PASS = ""
+MODEM_PAP_SERVER_USER = ""
+MODEM_PAP_USER = ""
+MODEM_PHONE = ""
+MODEM_REMOTE_IP = "0.0.0.0"
+MODEM_RESET_STRING = "'' \\d+++\\dATH OK"
+MY_DMZ_DEV_MTU = "1500"
+MY_LOCAL_DEV_MTU = "1500"
+MY_LOCAL_DEV_VLAN_MTU = "1500"
+MY_LOCAL_IP = "10.75.75.1"
+MY_LOCAL_NET = "255.255.255.0"
+MY_LOCAL_USE_VLAN = "no"
+MY_LOCAL_VLAN_ID = "1"
+MY_ROUTER_DEV_MTU = "1500"
+MY_ROUTER_DEV_VLAN_MTU = "1500"
+MY_ROUTER_IP = "10.35.10.81"
+MY_ROUTER_NET = "255.255.255.0"
+MY_ROUTER_USE_VLAN = "no"
+MY_ROUTER_VLAN_ID = "1"
+NETADMIN_SHELL_ENABLE = "no"
+NETDEV_BUDGET = "300"
+NETDEV_MAX_BACKLOG = "1000"
+NETWORKMODE = "router"
+NETWORK_HOSTNAME = "mguard"
+NETWORK_HOSTNAME_MODE = "user"
+NETWORK_PPTP_LOCALIP = "10.0.0.140"
+NETWORK_PPTP_LOGIN = "user@provider.example.net"
+NETWORK_PPTP_MODEMIP = "10.0.0.138"
+NETWORK_PPTP_MODEM_MODE = "static"
+NETWORK_PPTP_PASSWORD = "internet"
+NETWORK_PPTP_PPPD_OPTIONS = {
+  {
+    { rid = "MAI1873983082" }
+    OPTION = "lcp-restart 1"
+  }
+  {
+    { rid = "MAI1396127449" }
+    OPTION = "noaccomp"
+  }
+  {
+    { rid = "MAI0201894415" }
+    OPTION = "noauth"
+  }
+  {
+    { rid = "MAI1218270580" }
+    OPTION = "noccp"
+  }
+  {
+    { rid = "MAI0988136639" }
+    OPTION = "nobsdcomp"
+  }
+  {
+    { rid = "MAI0616584076" }
+    OPTION = "nodeflate"
+  }
+  {
+    { rid = "MAI1066877558" }
+    OPTION = "nopcomp"
+  }
+  {
+    { rid = "MAI0911879037" }
+    OPTION = "novj"
+  }
+  {
+    { rid = "MAI0023168160" }
+    OPTION = "novjccomp"
+  }
+  {
+    { rid = "MAI1969478799" }
+    OPTION = "mtu 1492"
+  }
+  {
+    { rid = "MAI0109684225" }
+    OPTION = "mru 2400"
+  }
+  {
+    { rid = "MAI1765349149" }
+    OPTION = "local"
+  }
+  {
+    { rid = "MAI0941325755" }
+    OPTION = "default-asyncmap"
+  }
+  {
+    { rid = "MAI0406262811" }
+    OPTION = "noipdefault"
+  }
+  {
+    { rid = "MAI1602364919" }
+    OPTION = "ipcp-accept-local"
+  }
+  {
+    { rid = "MAI1841769158" }
+    OPTION = "ipcp-accept-remote"
+  }
+  {
+    { rid = "MAI1019929035" }
+    OPTION = "usepeerdns"
+  }
+  {
+    { rid = "MAI0071600362" }
+    OPTION = "defaultroute"
+  }
+  {
+    { rid = "MAI0234673792" }
+    OPTION = "lcp-echo-interval 30"
+  }
+  {
+    { rid = "MAI0311207016" }
+    OPTION = "lcp-echo-failure 6"
+  }
+}
+NF_CONNTRACK_TCP_NOFLAGS_EST = "no"
+NTP_ENABLE = "no"
+NTP_ENABLE_FILESTAMP = "no"
+NTP_SERVERS = {
+}
+PHY_SETTING = {
+  {
+    { rid = "MAI0045952882" }
+    ADV1000FD = "1000fd"
+    ADV1000HD = "1000hd"
+    ADV100FD = "100fd"
+    ADV100HD = "100hd"
+    ADV10FD = "10fd"
+    ADV10HD = "10hd"
+    ADVPAUSE = "no"
+    AUTONEG = "autoneg"
+    FIXEDSETTING = "100fd"
+    MIRROR = "none"
+    POWER_UP = "up"
+    SUPERVISE = "no"
+  }
+  {
+    { rid = "MAI0715338659" }
+    ADV1000FD = "1000fd"
+    ADV1000HD = "1000hd"
+    ADV100FD = "100fd"
+    ADV100HD = "100hd"
+    ADV10FD = "10fd"
+    ADV10HD = "10hd"
+    ADVPAUSE = "no"
+    AUTONEG = "autoneg"
+    FIXEDSETTING = "100fd"
+    MIRROR = "none"
+    POWER_UP = "up"
+    SUPERVISE = "no"
+  }
+  {
+    { rid = "MAI1151517912" }
+    ADV1000FD = "1000fd"
+    ADV1000HD = "1000hd"
+    ADV100FD = "100fd"
+    ADV100HD = "100hd"
+    ADV10FD = "10fd"
+    ADV10HD = "10hd"
+    ADVPAUSE = "no"
+    AUTONEG = "autoneg"
+    FIXEDSETTING = "100fd"
+    MIRROR = "none"
+    POWER_UP = "up"
+    SUPERVISE = "no"
+  }
+  {
+    { rid = "MAI0087512708" }
+    ADV1000FD = "1000fd"
+    ADV1000HD = "1000hd"
+    ADV100FD = "100fd"
+    ADV100HD = "100hd"
+    ADV10FD = "10fd"
+    ADV10HD = "10hd"
+    ADVPAUSE = "no"
+    AUTONEG = "autoneg"
+    FIXEDSETTING = "100fd"
+    MIRROR = "none"
+    POWER_UP = "up"
+    SUPERVISE = "no"
+  }
+  {
+    { rid = "MAI1412070676" }
+    ADV1000FD = "1000fd"
+    ADV1000HD = "1000hd"
+    ADV100FD = "100fd"
+    ADV100HD = "100hd"
+    ADV10FD = "10fd"
+    ADV10HD = "10hd"
+    ADVPAUSE = "no"
+    AUTONEG = "autoneg"
+    FIXEDSETTING = "100fd"
+    MIRROR = "none"
+    POWER_UP = "up"
+    SUPERVISE = "no"
+  }
+}
+PORT_MIRROR_RECEIVER = "off"
+PPPOE_LOGIN = "user@provider.example.net"
+PPPOE_MSS = "1412"
+PPPOE_PASSWORD = "internet"
+PPPOE_PPPD_OPTIONS = {
+  {
+    { rid = "MAI0517498110" }
+    OPTION = "lcp-restart 1"
+  }
+  {
+    { rid = "MAI0955220521" }
+    OPTION = "noaccomp"
+  }
+  {
+    { rid = "MAI2126658245" }
+    OPTION = "noauth"
+  }
+  {
+    { rid = "MAI1851018725" }
+    OPTION = "noccp"
+  }
+  {
+    { rid = "MAI0400109372" }
+    OPTION = "nobsdcomp"
+  }
+  {
+    { rid = "MAI1996604691" }
+    OPTION = "nodeflate"
+  }
+  {
+    { rid = "MAI1397463344" }
+    OPTION = "nopcomp"
+  }
+  {
+    { rid = "MAI0869271883" }
+    OPTION = "novj"
+  }
+  {
+    { rid = "MAI0200077361" }
+    OPTION = "novjccomp"
+  }
+  {
+    { rid = "MAI1169263956" }
+    OPTION = "mtu 1492"
+  }
+  {
+    { rid = "MAI0318170955" }
+    OPTION = "mru 1492"
+  }
+  {
+    { rid = "MAI0590359124" }
+    OPTION = "local"
+  }
+  {
+    { rid = "MAI0636357499" }
+    OPTION = "default-asyncmap"
+  }
+  {
+    { rid = "MAI0301256812" }
+    OPTION = "noipdefault"
+  }
+  {
+    { rid = "MAI1367048707" }
+    OPTION = "ipcp-accept-local"
+  }
+  {
+    { rid = "MAI0914676168" }
+    OPTION = "ipcp-accept-remote"
+  }
+  {
+    { rid = "MAI0881643308" }
+    OPTION = "usepeerdns"
+  }
+  {
+    { rid = "MAI1653640386" }
+    OPTION = "lcp-echo-interval 30"
+  }
+  {
+    { rid = "MAI1602071203" }
+    OPTION = "lcp-echo-failure 6"
+  }
+}
+PPPOE_RECONNECT = "no"
+PPPOE_RECONNECT_HOUR = "0"
+PPPOE_RECONNECT_MIN = "0"
+PPPOE_SERVICE_NAME = ""
+PPPOE_USE_SERVICE_NAME = "no"
+PRIVATE_CERTS = {
+}
+PROTOCOLS = {
+  {
+    { rid = "MAI1188133325" }
+    NAME = "all"
+    NUMBER = "0"
+  }
+  {
+    { rid = "MAI1152095063" }
+    NAME = "icmp"
+    NUMBER = "1"
+  }
+  {
+    { rid = "MAI1365980948" }
+    NAME = "tcp"
+    NUMBER = "6"
+  }
+  {
+    { rid = "MAI0257923739" }
+    NAME = "udp"
+    NUMBER = "17"
+  }
+  {
+    { rid = "MAI1806301966" }
+    NAME = "esp"
+    NUMBER = "50"
+  }
+}
+PROXY_HTTP_ENABLE = "no"
+PROXY_HTTP_LOGIN = ""
+PROXY_HTTP_PASSWORD = ""
+PROXY_HTTP_PORT = "3128"
+PROXY_HTTP_URL = "proxy.example.com"
+PSM_REPOSITORIES = {
+  {
+    { rid = "MAI0624815805" }
+    LOGIN = ""
+    PASSWORD = ""
+    PREFER_VPN = "no"
+    PROTO = "https"
+    SERVER = "update.innominate.com"
+  }
+}
+QOS_EGRESS_DIALIN_DEFAULT = {
+  rowref = "MAI1539805580"
+}
+QOS_EGRESS_DIALIN_ENABLE = "no"
+QOS_EGRESS_DIALIN_QUEUES = {
+  {
+    { rid = "MAI1325643525" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Urgent"
+    PREFERENCE = "high"
+  }
+  {
+    { rid = "MAI1199154975" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Important"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1539805580" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Default"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI0163073430" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Low Priority"
+    PREFERENCE = "low"
+  }
+}
+QOS_EGRESS_DIALIN_RATE = "unlimited"
+QOS_EGRESS_DIALIN_RULES = {
+  {
+    { rid = "MAI0312016981" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Delay"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1325643525"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI1207373513" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Maximize-Reliability"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1199154975"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI1557185476" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Cost"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0163073430"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+}
+QOS_EGRESS_DIALIN_UNIT = "kbit_per_sec"
+QOS_EGRESS_DIALIN_VPN_DEFAULT = {
+  rowref = "MAI0061521558"
+}
+QOS_EGRESS_DIALIN_VPN_ENABLE = "no"
+QOS_EGRESS_DIALIN_VPN_QUEUES = {
+  {
+    { rid = "MAI0076533224" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Urgent"
+    PREFERENCE = "high"
+  }
+  {
+    { rid = "MAI1882229513" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Important"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI0061521558" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Default"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI0669385777" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Low Priority"
+    PREFERENCE = "low"
+  }
+}
+QOS_EGRESS_DIALIN_VPN_RATE = "unlimited"
+QOS_EGRESS_DIALIN_VPN_RULES = {
+  {
+    { rid = "MAI1833701969" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Delay"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0076533224"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI2092454327" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Maximize-Reliability"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1882229513"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI0513116988" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Cost"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0669385777"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+}
+QOS_EGRESS_DIALIN_VPN_UNIT = "kbit_per_sec"
+QOS_EGRESS_EXTERN2_DEFAULT = {
+  rowref = "MAI1693330504"
+}
+QOS_EGRESS_EXTERN2_ENABLE = "no"
+QOS_EGRESS_EXTERN2_QUEUES = {
+  {
+    { rid = "MAI0436179252" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Urgent"
+    PREFERENCE = "high"
+  }
+  {
+    { rid = "MAI1083478444" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Important"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1693330504" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Default"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1324557968" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Low Priority"
+    PREFERENCE = "low"
+  }
+}
+QOS_EGRESS_EXTERN2_RATE = "unlimited"
+QOS_EGRESS_EXTERN2_RULES = {
+  {
+    { rid = "MAI0402534772" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Delay"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0436179252"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI1200875129" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Maximize-Reliability"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1083478444"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI1091153968" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Cost"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1324557968"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+}
+QOS_EGRESS_EXTERN2_UNIT = "kbit_per_sec"
+QOS_EGRESS_EXTERN2_VPN_DEFAULT = {
+  rowref = "MAI1751595464"
+}
+QOS_EGRESS_EXTERN2_VPN_ENABLE = "no"
+QOS_EGRESS_EXTERN2_VPN_QUEUES = {
+  {
+    { rid = "MAI1252911081" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Urgent"
+    PREFERENCE = "high"
+  }
+  {
+    { rid = "MAI0437722411" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Important"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1751595464" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Default"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1171437724" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Low Priority"
+    PREFERENCE = "low"
+  }
+}
+QOS_EGRESS_EXTERN2_VPN_RATE = "unlimited"
+QOS_EGRESS_EXTERN2_VPN_RULES = {
+  {
+    { rid = "MAI1478094899" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Delay"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1252911081"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI0726738700" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Maximize-Reliability"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0437722411"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI0928633116" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Cost"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1171437724"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+}
+QOS_EGRESS_EXTERN2_VPN_UNIT = "kbit_per_sec"
+QOS_EGRESS_EXTERN_DEFAULT = {
+  rowref = "MAI2146903696"
+}
+QOS_EGRESS_EXTERN_ENABLE = "no"
+QOS_EGRESS_EXTERN_QUEUES = {
+  {
+    { rid = "MAI1871844127" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Urgent"
+    PREFERENCE = "high"
+  }
+  {
+    { rid = "MAI0696574295" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Important"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI2146903696" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Default"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1596495319" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Low Priority"
+    PREFERENCE = "low"
+  }
+}
+QOS_EGRESS_EXTERN_RATE = "unlimited"
+QOS_EGRESS_EXTERN_RULES = {
+  {
+    { rid = "MAI0987556687" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Delay"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1871844127"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI1604140763" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Maximize-Reliability"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0696574295"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI0523534673" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Cost"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1596495319"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+}
+QOS_EGRESS_EXTERN_UNIT = "kbit_per_sec"
+QOS_EGRESS_EXTERN_VPN_DEFAULT = {
+  rowref = "MAI1435413711"
+}
+QOS_EGRESS_EXTERN_VPN_ENABLE = "no"
+QOS_EGRESS_EXTERN_VPN_QUEUES = {
+  {
+    { rid = "MAI1548342300" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Urgent"
+    PREFERENCE = "high"
+  }
+  {
+    { rid = "MAI1619292187" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Important"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1435413711" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Default"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1478289125" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Low Priority"
+    PREFERENCE = "low"
+  }
+}
+QOS_EGRESS_EXTERN_VPN_RATE = "unlimited"
+QOS_EGRESS_EXTERN_VPN_RULES = {
+  {
+    { rid = "MAI1458581871" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Delay"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1548342300"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI1280577023" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Maximize-Reliability"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1619292187"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI1390261248" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Cost"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1478289125"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+}
+QOS_EGRESS_EXTERN_VPN_UNIT = "kbit_per_sec"
+QOS_EGRESS_LOCAL_DEFAULT = {
+  rowref = "MAI1008126749"
+}
+QOS_EGRESS_LOCAL_ENABLE = "no"
+QOS_EGRESS_LOCAL_QUEUES = {
+  {
+    { rid = "MAI0969186595" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Urgent"
+    PREFERENCE = "high"
+  }
+  {
+    { rid = "MAI1296390647" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Important"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1008126749" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Default"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI0272188169" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Low Priority"
+    PREFERENCE = "low"
+  }
+}
+QOS_EGRESS_LOCAL_RATE = "unlimited"
+QOS_EGRESS_LOCAL_RULES = {
+  {
+    { rid = "MAI1949452505" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Delay"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0969186595"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI0208231668" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Maximize-Reliability"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1296390647"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI1810596588" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Cost"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0272188169"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+}
+QOS_EGRESS_LOCAL_UNIT = "kbit_per_sec"
+QOS_EGRESS_LOCAL_VPN_DEFAULT = {
+  rowref = "MAI1504882098"
+}
+QOS_EGRESS_LOCAL_VPN_ENABLE = "no"
+QOS_EGRESS_LOCAL_VPN_QUEUES = {
+  {
+    { rid = "MAI0045998374" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Urgent"
+    PREFERENCE = "high"
+  }
+  {
+    { rid = "MAI1812382961" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Important"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1504882098" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Default"
+    PREFERENCE = "medium"
+  }
+  {
+    { rid = "MAI1065791895" }
+    COMMENT = ""
+    MAX_RATE = "unlimited"
+    MIN_RATE = "10"
+    NAME = "Low Priority"
+    PREFERENCE = "low"
+  }
+}
+QOS_EGRESS_LOCAL_VPN_RATE = "unlimited"
+QOS_EGRESS_LOCAL_VPN_RULES = {
+  {
+    { rid = "MAI0377327485" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Delay"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI0045998374"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI0448927848" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Maximize-Reliability"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1812382961"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+  {
+    { rid = "MAI0683601640" }
+    COMMENT = ""
+    FIND_TOSDSCP = "TOS-Minimize-Cost"
+    FROM_IP = "0.0.0.0/0"
+    FROM_PORT = "any"
+    IN_IP = "0.0.0.0/0"
+    IN_PORT = "any"
+    PROTO = "all"
+    QUEUE = {
+      rowref = "MAI1065791895"
+    }
+    SET_TOSDSCP = "unchanged"
+  }
+}
+QOS_EGRESS_LOCAL_VPN_UNIT = "kbit_per_sec"
+QOS_INGRESS_EXTERN_ENABLE = "no"
+QOS_INGRESS_EXTERN_FILTERS = {
+  {
+    { rid = "MAI0994808657" }
+    BURST = "64"
+    COMMENT = ""
+    ETHERTYPE_HEX = "ARP"
+    FIND_TOSDSCP = "all"
+    FROM_IP = "0.0.0.0/0"
+    IN_IP = "0.0.0.0/0"
+    MAX_RATE = "unlimited"
+    MIN_RATE = "100"
+    PROTO = "all"
+    USE_VLAN = "no"
+    VLAN_ID = "1"
+  }
+}
+QOS_INGRESS_EXTERN_UNIT = "packet_per_sec"
+QOS_INGRESS_LOADTOKEN_MAX = "600000000"
+QOS_INGRESS_LOADTOKEN_MIN = "400000000"
+QOS_INGRESS_LOADTOKEN_WEIGHT = "990"
+QOS_INGRESS_LOCAL_ENABLE = "no"
+QOS_INGRESS_LOCAL_FILTERS = {
+  {
+    { rid = "MAI1040761539" }
+    BURST = "64"
+    COMMENT = ""
+    ETHERTYPE_HEX = "ARP"
+    FIND_TOSDSCP = "all"
+    FROM_IP = "0.0.0.0/0"
+    IN_IP = "0.0.0.0/0"
+    MAX_RATE = "unlimited"
+    MIN_RATE = "100"
+    PROTO = "all"
+    USE_VLAN = "no"
+    VLAN_ID = "1"
+  }
+}
+QOS_INGRESS_LOCAL_UNIT = "packet_per_sec"
+RACK_ID = "0"
+RADIUS_AUTH_HTTPS_ENABLE = "no"
+RADIUS_AUTH_SHELL_ENABLE = "no"
+RADIUS_FILTER = {
+}
+RADIUS_NAS = ""
+RADIUS_RETRIES = "3"
+RADIUS_SERVERS = {
+}
+RADIUS_TIMEOUT = "3"
+REDUNDANCY_AVAIL_EXT_DISABLE = "no"
+REDUNDANCY_AVAIL_PASSWORD = "passwd"
+REDUNDANCY_BRIDGE_PEER_MANAGE = {
+  {
+    { rid = "MAI1756100198" }
+    IP = "10.0.0.1"
+  }
+}
+REDUNDANCY_CHECK_HOSTS_PRIM_EXT = {
+  {
+    { rid = "MAI0760134462" }
+    IP = "10.0.0.30"
+  }
+}
+REDUNDANCY_CHECK_HOSTS_PRIM_INT = {
+  {
+    { rid = "MAI0847647170" }
+    IP = "192.168.1.30"
+  }
+}
+REDUNDANCY_CHECK_HOSTS_SEC_EXT = {
+}
+REDUNDANCY_CHECK_HOSTS_SEC_INT = {
+}
+REDUNDANCY_CHECK_MODE_EXT = "none"
+REDUNDANCY_CHECK_MODE_INT = "none"
+REDUNDANCY_DAD_ARP_MAC = "00:0c:be:00:00:01"
+REDUNDANCY_ENABLE = "no"
+REDUNDANCY_FAILOVER_MS = "3000"
+REDUNDANCY_ID_BRIDGE = "51"
+REDUNDANCY_ID_EXT = "51"
+REDUNDANCY_ID_INT = "52"
+REDUNDANCY_LATENCY_MS = "0"
+REDUNDANCY_PRIORITY = "high"
+REDUNDANCY_SYNCIF_ENABLE = "no"
+REDUNDANCY_SYNCIF_IP = "192.168.68.29"
+REDUNDANCY_SYNCIF_NET = "255.255.255.0"
+REDUNDANCY_SYNCIF_USE_VLAN = "no"
+REDUNDANCY_SYNCIF_VLAN_ID = "1"
+REDUNDANCY_SYNC_ENCR_ALGO = "3des"
+REDUNDANCY_SYNC_ENCR_ENABLE = "no"
+REDUNDANCY_SYNC_ENCR_HASHALGO = "sha"
+REDUNDANCY_SYNC_ENCR_PASSWORD = "1onG paSsWord wIth Much 3n-trpoy!"
+REDUNDANCY_SYNC_VPN_DUMP_RATE = "20"
+REDUNDANCY_SYNC_VPN_DUMP_RATE_AUTO = "yes"
+REDUNDANCY_VIRT_BRIDGE = {
+  {
+    { rid = "MAI0112234199" }
+    IP = "10.0.0.100"
+  }
+}
+REDUNDANCY_VIRT_BRIDGE_ENABLE = "no"
+REDUNDANCY_VIRT_EXT = {
+  {
+    { rid = "MAI0629732309" }
+    IP = "10.0.0.100"
+  }
+}
+REDUNDANCY_VIRT_INT = {
+  {
+    { rid = "MAI1584952830" }
+    IP = "192.168.1.100"
+  }
+}
+REMOTE_CERTS = {
+}
+ROUTER_MODE = "static"
+SECSTICK_CLIENT_ALIVE_COUNT_MAX = "3"
+SECSTICK_CLIENT_ALIVE_INTERVAL_SECS = "120"
+SECSTICK_CONNECTION = {
+}
+SECSTICK_ENABLE = "no"
+SECSTICK_LOGIN_ALLOWED_MAX = "10"
+SECSTICK_PER_USER_LOGIN_ALLOWED_MAX = "2"
+SECSTICK_REMOTE_ACCESS_RULES = {
+}
+SECSTICK_REMOTE_ENABLE = "no"
+SECSTICK_REMOTE_LISTENPORT = "22002"
+SECSTICK_VPN_HUBANDSPOKE = "no"
+SERIAL_BAUDRATE = "57600"
+SERIAL_CONSOLE_VIA_USB_ENABLE = "no"
+SERIAL_CRTSCTS = ""
+SERIAL_FW_INCOMING = {
+}
+SERIAL_FW_LOG_DEFAULT_INCOMING = "no"
+SERIAL_FW_LOG_DEFAULT_OUTGOING = "no"
+SERIAL_FW_OUTGOING = {
+}
+SERIAL_PARAMS = "8n1"
+SERIAL_PPP_IP_LOCAL = "192.168.2.1"
+SERIAL_PPP_IP_REMOTE = "192.168.2.2"
+SERIAL_PPP_LOGIN = "admin"
+SERIAL_PPP_MODEM = "off"
+SERIAL_PPP_PASSWORD = "private"
+SERIAL_TRANSPARENT = "yes"
+SERVICE_ACK1_REF = ""
+SERVICE_ACK2_REF = ""
+SERVICE_SWITCH1_TYPE = "button"
+SERVICE_SWITCH2_TYPE = "button"
+SERVICE_SWITCH3_TYPE = "button"
+SHELL_TIMEOUT = "0"
+SIG_ALARM_LINK = "off"
+SMS_NOTIFICATION = {
+}
+SNMP_ACCESS_RULES = {
+}
+SNMP_AGENT_TRAP = "yes"
+SNMP_AUTHENTICATION_TRAP = "yes"
+SNMP_CHASSIS_TRAP = "yes"
+SNMP_COLDSTART_TRAP = "yes"
+SNMP_COMMUNITY = ""
+SNMP_COMMUNITY_RO = ""
+SNMP_ENABLE_V1 = "no"
+SNMP_ENABLE_V3 = "no"
+SNMP_GAI_SECURITY_CONTEXT = "admin"
+SNMP_LINKUPDOWN_TRAP = "yes"
+SNMP_LISTENPORT = "161"
+SNMP_SECGATEWAY_TRAP = "yes"
+SNMP_TRAP_AVDETECTION = "yes"
+SNMP_TRAP_AVFAIL = "yes"
+SNMP_TRAP_AVINFO = "yes"
+SNMP_TRAP_BLADECONFIG = "yes"
+SNMP_TRAP_BLADESTATE = "yes"
+SNMP_TRAP_GSM = "yes"
+SNMP_TRAP_LOWRESSOURCES = "yes"
+SNMP_TRAP_RECEIVERS = {
+}
+SNMP_TRAP_REDUNDANCY_STATE = "yes"
+SNMP_TRAP_SECSTICK = "yes"
+SNMP_TRAP_USER_FIREWALL = "yes"
+SNMP_TRAP_VPN_IPSEC = "yes"
+SNMP_TRAP_VPN_L2TP = "yes"
+SSH_ADMIN_LOGIN_ALLOWED_MAX = "4"
+SSH_AUDIT_LOGIN_ALLOWED_MAX = "2"
+SSH_CA_CERTS = {
+}
+SSH_CLIENT_ALIVE_COUNT_MAX = "3"
+SSH_CLIENT_ALIVE_INTERVAL_SECS = "120"
+SSH_NETADMIN_LOGIN_ALLOWED_MAX = "2"
+SSH_REMOTE_ACCESS_RULES = {
+}
+SSH_REMOTE_ENABLE = "no"
+SSH_REMOTE_LISTENPORT = "22"
+SSH_SERVER_CERT_REF = ""
+SSH_X509_AUTH = {
+}
+SSH_X509_AUTH_BLOB = {
+}
+SSH_X509_ENABLE = "no"
+STATIC_MULTICAST_GROUP = {
+}
+STEALTH_ALT_ROUTES = {
+  {
+    { rid = "MAI0169492514" }
+    GATEWAY = "10.1.0.253"
+    NETWORK = "10.75.75.1/32"
+  }
+}
+STEALTH_AUTO_IGNORE_TCP139 = "no"
+STEALTH_ENABLE_DHCP_FORWARDING = "yes"
+STEALTH_ENABLE_GVRP_FORWARDING = "no"
+STEALTH_ENABLE_STP_FORWARDING = "no"
+STEALTH_IP = "0.0.0.0"
+STEALTH_L2_FILTER_EXTERN = {
+}
+STEALTH_L2_FILTER_INTERN = {
+}
+STEALTH_MAC = "00:00:00:00:00:00"
+STEALTH_MANAGE_ALIASES = {
+}
+STEALTH_MANAGE_GW = "10.35.10.254"
+STEALTH_MANAGE_IP = "10.35.10.81"
+STEALTH_MANAGE_NET = "255.255.255.0"
+STEALTH_MANAGE_USE_VLAN = "no"
+STEALTH_MANAGE_VLAN_ID = "1"
+STEALTH_MODE = "multi"
+STEALTH_MTU = "1500"
+STEALTH_VLAN_MTU = "1500"
+SYS_CONTACT = ""
+SYS_LOCATION = ""
+SYS_NAME = "Marketing Tool"
+TIMEZONE = "CST6CDT,M3.2.0,M11.1.0"
+USERFW_ENABLE = "no"
+USERFW_GROUP_AUTH_ENABLE = "no"
+USERFW_INTERFACES = {
+  {
+    { rid = "MAI1564127427" }
+    INTERFACE = "int"
+  }
+  {
+    { rid = "MAI1267662504" }
+    INTERFACE = "ext1"
+  }
+  {
+    { rid = "MAI1667771877" }
+    INTERFACE = "dial-in"
+  }
+  {
+    { rid = "MAI1516892920" }
+    INTERFACE = "ipsec"
+  }
+}
+USERFW_TEMPLATE = {
+}
+USERFW_USERS = {
+}
+USER_LOGIN_REQUIRED = "no"
+VPN_ALWAYS_SEND_NATOA = "yes"
+VPN_CONNECTION = {
+}
+VPN_CRL_CHECK_INTERVAL = "0"
+VPN_DEBUG_CONTROL = "no"
+VPN_DYNIP_HOSTNAME = "host.example.com"
+VPN_DYNIP_LOGIN = ""
+VPN_DYNIP_PASSWD = ""
+VPN_DYNIP_PORT = "80"
+VPN_DYNIP_PROVIDER = "freedns"
+VPN_DYNIP_REGISTER = "no"
+VPN_DYNIP_REGISTER_INTERVAL = "420"
+VPN_DYNIP_SERVER = "dyndns.example.com"
+VPN_DYNIP_WATCH = "no"
+VPN_DYNIP_WATCH_INTERVAL = "300"
+VPN_HIDE_TOS = "no"
+VPN_HUB_AND_SPOKE = "no"
+VPN_IKE_FRAGMENTATION = "yes"
+VPN_IPSEC0_MTU = "16260"
+VPN_IPTUN_ENABLE = "no"
+VPN_IPTUN_LISTEN_PORT = "8080"
+VPN_IPTUN_POOL = "0"
+VPN_KEEP_ALIVE_FORCE = "no"
+VPN_KEEP_ALIVE_INTERVAL = "300"
+VPN_LOG_PERSIST_ENABLED = "no"
+VPN_LOG_PERSIST_FAILURES_ONLY = "yes"
+VPN_LOG_PERSIST_LEAST_FREE = "1536"
+VPN_LOG_PERSIST_MAX_FPS = "2"
+VPN_MSS = "0"
+VPN_NAT_TRAVERSAL = "on"
+VPN_NO_CR_SEND = "no"
+VPN_OCSP_CERTS = {
+}
+VPN_OCSP_URI = ""
+VPN_PORTFLOATING = "on"
+VPN_ROUTING = "restrict_to_int"
+VPN_UNIQUE_IDS = "no"
+WWW_LANGUAGE = "auto"
+WWW_LEVEL = "10"
+WWW_TIMEOUT = "1800"
+XAUTH_USERS = {
+  {
+    { rid = "MAI0766872616" }
+    PASSWORD = "*"
+    USERNAME = "*"
+  }
+}
+// End of configuration profile
